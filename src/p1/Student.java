@@ -5,14 +5,20 @@ public class Student extends Person {
 	private double gpa;
 	private String major;
 	
+
 	
 
-	public Student(String name, String id, String phone) {
+	public Student(Name name, String id, String phone) {
 		super(name, id, phone);
 
 	}
 
-	
+	public Student(Student student) {
+		super(student);
+		this.gpa=student.gpa;
+		this.major=student.major;
+		
+	}
 	
 
 	public double getGpa() {

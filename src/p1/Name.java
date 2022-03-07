@@ -1,12 +1,14 @@
 package p1;
 
-public class Name extends Person {
+public class Name {
 	
 	private String name;
 	
-	public Name(String name, String id, String phone) {
-		super(name, id, phone);
-		this.name=name;
+	
+
+	public Name(String name) {
+		super();
+		this.name = name;
 	}
 
 	public String getName() {
@@ -19,13 +21,9 @@ public class Name extends Person {
 
 	
 	public String toString() {
-		return "Name =" + name + "";
+		return "Name name=" + name + "";
 	}
-
 	
-
-	
-
 	
 
 }

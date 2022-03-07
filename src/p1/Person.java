@@ -3,30 +3,30 @@ package p1;
 public class Person {
 
 	
-	private String name;
+	private Name name;
 	private String id;
 	private String phone;
+	private static int idCounter;
 	
-	
-	public Person(String name, String id, String phone) {
+	public Person(Name name, String id, String phone) {
 		super();
 		this.name = name;
-		this.id = id;
+		this.id = String.valueOf(idCounter++);
 		this.phone = phone;
 	}
 
 
 	public Person(Person person) {
-		new Person(person.getName(), person.getPhone());
+		
 	}
 	
 	
-	public String getName() {
+	public Name getName() {
 		return name;
 	}
 
 
-	public void setName(String name) {
+	public void setName(Name name) {
 		this.name = name;
 	}
 

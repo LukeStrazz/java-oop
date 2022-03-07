@@ -2,14 +2,24 @@ package p1;
 
 public class Instructor extends Person {
 
-	public Instructor(String name, String id, String phone) {
+	public Instructor(Name name, String id, String phone) {
 		super(name, id, phone);
 		
 	}
 	private double salary;
 	private String phoneNumber;
 	
-	public Instructor(String name, String id, String phone, double salary, String phoneNumber) {
+	
+	
+	public Instructor(Instructor instructor) {
+		super(instructor);
+		this.salary=instructor.salary;
+		this.phoneNumber=instructor.phoneNumber;
+		
+	}
+	
+	
+	public Instructor(Name name, String id, String phone, double salary, String phoneNumber) {
 		super(name, id, phone);
 		this.salary = salary;
 		this.phoneNumber = phoneNumber;
